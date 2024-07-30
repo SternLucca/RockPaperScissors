@@ -1,0 +1,156 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: dimgray;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    color: white;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.pedra{
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+    background-color: red;
+    border-radius: 20px;
+    border-color: red;
+}
+.pedraIMG{
+    width: 75px;
+}
+.papel{
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 20px;
+    border-color: blue;
+}
+.papelIMG{
+    width: 75px;
+    margin-right: 10px;
+}
+.tesoura{
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 20px;
+    border-color: yellow;
+}
+.tesouraIMG{
+    width: 75px;
+}
+#escolhaPlayer{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    opacity: 1;
+    text-align: center;
+}
+#vs{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    opacity: 1;
+}#escolhaCPU{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    opacity: 1;
+}
+.fade_in{
+    animation: fade_in 1s linear;
+    animation-fill-mode: forwards;
+}
+.fade_in2{
+    animation: fade_in2 2s linear;
+    animation-fill-mode: forwards;
+}
+.fade_in3{
+    animation: fade_in2 3s linear;
+    animation-fill-mode: forwards;
+}
+.transparent {
+    animation: fade_out 500ms linear;
+    animation-fill-mode: forwards;
+}
+#Restart{
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: darkgray;
+    border: none;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.pontuacao{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 500px;
+}
+.results{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@keyframes fade_out{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes fade_in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fade_in2 {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade_in2 {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

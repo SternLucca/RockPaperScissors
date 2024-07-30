@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="rock.png" type="image/png">
+    <title>Pedra, Papel e Tesoura</title>
+</head>
+<body>
+    <div class="display">
+        <h1 class="title">Rock, Paper, Scissors</h1>
+        <div class="results">
+            <p id="escolhaPlayer">PlaceHolder</p>
+            <p id="vs">VS</p>
+            <p id="escolhaCPU">PlaceHolder</p>
+        </div>
+        <div class="options">
+            <button class="pedra" id="pedra"><img src="rock.png"class="pedraIMG" draggable="false"></button>
+            <button class="papel" id="papel"><img src="paper.png" class="papelIMG" draggable="false"></button>
+            <button class="tesoura" id="tesoura"><img src="scissors.png" class="tesouraIMG" draggable="false"></button>
+        </div>
+        <button id="Restart">Restart</button>
+    </div>
+    <div class="pontuacao">
+        <p class="playerP">Player: 0</p>
+        <p class="cpuP">CPU: 0</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
